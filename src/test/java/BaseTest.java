@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class BaseTest {
 
-    private WebDriver driver;
+    public WebDriver driver;
 
     @BeforeAll
     static void setupClass() {
