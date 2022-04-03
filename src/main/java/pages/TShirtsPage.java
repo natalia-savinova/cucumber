@@ -1,9 +1,8 @@
 package pages;
 
-import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertTrue;
 
 public class TShirtsPage extends BasePage{
 
@@ -12,9 +11,8 @@ public class TShirtsPage extends BasePage{
     public TShirtsPage() {
     }
 
-    @Step("Check Header text")
     public TShirtsPage headerTextTrue() {
-        assertTrue(getElement(TShirtsHeader).getText().contains("T-SHIRTS"), "Page is incorrect");
+        assertTrue("Page is incorrect", getElement(TShirtsHeader).getText().contains("T-SHIRTS"));
         return this;
     }
 }
